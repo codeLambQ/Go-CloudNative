@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "./lesson";
+
+message  Lesson {
+  int32 id = 1;
+  string name = 2;
+  float rating = 3;
+}
+
+message LessonId {
+  int32 id = 1;
+}
+
+service LessonService {
+  rpc getLesson(LessonId) returns (Lesson);
+}
