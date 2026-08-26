@@ -83,3 +83,21 @@ func WireApp() App {
 	return app
 }
 ```
+
+## kratos
+```shell
+#1. 安装
+go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
+
+#2. 创建项目
+kratos new kratos-demo -r https://gitee.com/go-kratos/kratos-layout.git
+
+# 文件
+# golang.org/x/tools/internal/tokeninternal
+/home/codelamb/go/pkg/mod/golang.org/x/tools@v0.17.0/internal/tokeninternal/tokeninternal.go:78:9: invalid array length -delta * delta (constant -256 of type int64)
+cmd/kratos-demo/wire_gen.go:3: running "go": exit status 1
+如果 go generate ./... 遇到上面报错
+go get golang.org/x/tools@latest
+go mod tidy
+go generate ./...
+```
