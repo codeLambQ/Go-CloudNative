@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./lesson";
+option go_package = ".;lesson";
 
-import "basic/grpc/proto_/google/api/annotations.proto";
+import "google/api/annotations.proto";
 
 message  Lesson {
   int32 id = 1;
