@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b5f7ec3-121c-4095-891b-75a4c577d536" name="更改" comment="修改 protoc 文件，支持 http">
-      <change beforePath="$PROJECT_DIR$/.idea/Go-CloudNative.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Go-CloudNative.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +19,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.27.0.windows-amd64" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -38,6 +38,8 @@
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;Go 构建.go build grpc/client.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build grpc/server.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build kratos-home/.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build kratos-home/cmd/kratos-home.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
@@ -72,13 +74,14 @@
             <map>
               <entry key="go build grpc/client" value="STOPPED" />
               <entry key="go build grpc/server" value="STOPPED" />
+              <entry key="go build kratos-home/cmd/kratos-home" value="FAILED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build grpc/client">
+  <component name="RunManager" selected="Go 构建.go build kratos-home/cmd/kratos-home">
     <configuration name="go build github.com/codeLambQ/client" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Go-CloudNative" />
       <working_directory value="$PROJECT_DIR$/basic/rpc" />
@@ -124,6 +127,25 @@
       <auto_managed_config_id value="$PROJECT_DIR$/basic/http" />
       <method v="2" />
     </configuration>
+    <configuration name="go build kratos-demo/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go-CloudNative" />
+      <working_directory value="$PROJECT_DIR$/kratos/kratos-demo" />
+      <kind value="PACKAGE" />
+      <package value="kratos-demo/cmd/kratos-demo" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/kratos/kratos-demo/cmd/kratos-demo" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build kratos-home/cmd/kratos-home" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go-CloudNative" />
+      <working_directory value="$PROJECT_DIR$/kratos/kratos-home" />
+      <parameters value="-conf configs/config.yaml" />
+      <kind value="PACKAGE" />
+      <package value="kratos-home/cmd/kratos-home" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/kratos/kratos-home/cmd/kratos-home" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build portobuf/main" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Go-CloudNative" />
       <working_directory value="$PROJECT_DIR$/basic/protobuf" />
@@ -133,6 +155,26 @@
       <auto_managed_config_id value="$PROJECT_DIR$/basic/protobuf/main" />
       <method v="2" />
     </configuration>
+    <configuration name="go build wire/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go-CloudNative" />
+      <working_directory value="$PROJECT_DIR$/basic/wire" />
+      <kind value="PACKAGE" />
+      <package value="wire" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/basic/wire" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go 构建.go build github.com/codeLambQ/client" />
+      <item itemvalue="Go 构建.go build github.com/codeLambQ/server" />
+      <item itemvalue="Go 构建.go build grpc/client" />
+      <item itemvalue="Go 构建.go build grpc/server" />
+      <item itemvalue="Go 构建.go build http" />
+      <item itemvalue="Go 构建.go build kratos-demo/" />
+      <item itemvalue="Go 构建.go build kratos-home/cmd/kratos-home" />
+      <item itemvalue="Go 构建.go build portobuf/main" />
+      <item itemvalue="Go 构建.go build wire/" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
