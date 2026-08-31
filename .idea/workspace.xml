@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="kratos 创建项目">
+    <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="kratos 对数据库进行操作">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/error_reason.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/error_reason.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.proto" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/cmd/kratos-article/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/cmd/kratos-article/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/internal/server/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/internal/server/http.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study.md" beforeDir="false" afterPath="$PROJECT_DIR$/study.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,65 +36,66 @@
   </component>
   <component name="GOROOT" url="file://$USER_HOME$/env/go" />
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.33369887605728E-40" />
-      <entry key="MS500" value="1.2722875392306513E-8" />
-      <entry key="S2" value="0.010620533139896393" />
-      <entry key="S5" value="0.16235233059329648" />
-      <entry key="S10" value="0.4029297252368301" />
-      <entry key="S30" value="0.7490130661899058" />
-      <entry key="S60" value="1.1414170283778655" />
-      <entry key="M2" value="2.762539101936906" />
-      <entry key="M5" value="10.417469489512701" />
-      <entry key="M10" value="24.803208580843982" />
-      <entry key="M15" value="39.917591485263095" />
-      <entry key="M30" value="88.163770919477" />
-      <entry key="H1" value="165.4174345409902" />
-      <entry key="H2" value="244.84285935535422" />
-      <entry key="H4" value="303.864927583187" />
-      <entry key="D1" value="367.3841810073038" />
-      <entry key="W1" value="379.8689552516658" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000003249" />
+      <entry key="S2" value="1.0012913565388706" />
+      <entry key="S5" value="1.137291663690218" />
+      <entry key="S10" value="1.7512083390934081" />
+      <entry key="S30" value="3.723594259146976" />
+      <entry key="S60" value="5.7544282687208925" />
+      <entry key="M2" value="10.238114288242466" />
+      <entry key="M5" value="20.91165105025134" />
+      <entry key="M10" value="29.19428653680753" />
+      <entry key="M15" value="33.02469405079826" />
+      <entry key="M30" value="38.47592846804053" />
+      <entry key="H1" value="55.93081456013138" />
+      <entry key="H2" value="120.35554406704735" />
+      <entry key="H4" value="227.16964098778112" />
+      <entry key="D1" value="427.9672922832322" />
+      <entry key="W1" value="480.54295578217494" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0187130868722796" />
-      <entry key="MS500" value="1.526927431481059" />
-      <entry key="S2" value="2.3459440420500735" />
-      <entry key="S5" value="2.8228296547734586" />
-      <entry key="S10" value="3.4745219950203476" />
-      <entry key="S30" value="5.2913086476736915" />
-      <entry key="S60" value="6.394355161045281" />
-      <entry key="M2" value="7.691504238597351" />
-      <entry key="M5" value="12.853386494337498" />
-      <entry key="M10" value="21.94281630059336" />
-      <entry key="M15" value="30.058851529217574" />
-      <entry key="M30" value="47.10606847185328" />
-      <entry key="H1" value="64.17486107544678" />
-      <entry key="H2" value="77.58899140602097" />
-      <entry key="H4" value="86.34026717440621" />
-      <entry key="D1" value="95.06785169784824" />
-      <entry key="W1" value="96.71982155263589" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="8.22222322343649E-90" />
+      <entry key="S2" value="5.3548500728443E-23" />
+      <entry key="S5" value="1.2345222631251648E-9" />
+      <entry key="S10" value="3.5135773558957844E-5" />
+      <entry key="S30" value="0.03291953128381869" />
+      <entry key="S60" value="0.19474723145286302" />
+      <entry key="M2" value="0.5687613047494714" />
+      <entry key="M5" value="1.3747129390935207" />
+      <entry key="M10" value="1.985497523471352" />
+      <entry key="M15" value="2.2678797840881333" />
+      <entry key="M30" value="2.8463650551005943" />
+      <entry key="H1" value="7.374140777730329" />
+      <entry key="H2" value="24.327118110293284" />
+      <entry key="H4" value="50.26819526176913" />
+      <entry key="D1" value="95.56395254311434" />
+      <entry key="W1" value="106.96478141722832" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0199335369454875" />
-      <entry key="MS500" value="0.5712207258228423" />
-      <entry key="S2" value="1.5989020921888148" />
-      <entry key="S5" value="2.4973650774236216" />
-      <entry key="S10" value="3.536488687998444" />
-      <entry key="S30" value="5.856834544152632" />
-      <entry key="S60" value="7.417244411512845" />
-      <entry key="M2" value="10.361452898777065" />
-      <entry key="M5" value="23.17958733765926" />
-      <entry key="M10" value="46.66015920189729" />
-      <entry key="M15" value="69.89729055617283" />
-      <entry key="M30" value="135.20757882291582" />
-      <entry key="H1" value="229.54942174270437" />
-      <entry key="H2" value="322.4056262531395" />
-      <entry key="H4" value="390.1904849587736" />
-      <entry key="D1" value="462.4493115519475" />
-      <entry key="W1" value="476.5883807230085" />
+      <entry key="MS100" value="0.9395227492140118" />
+      <entry key="MS500" value="0.987600861445694" />
+      <entry key="S2" value="0.9981732705940861" />
+      <entry key="S5" value="1.1358847874244542" />
+      <entry key="S10" value="1.7501850298283457" />
+      <entry key="S30" value="3.748821738107466" />
+      <entry key="S60" value="5.925669333548431" />
+      <entry key="M2" value="10.774663169997217" />
+      <entry key="M5" value="22.26070538534224" />
+      <entry key="M10" value="31.163186357825296" />
+      <entry key="M15" value="35.28045838600107" />
+      <entry key="M30" value="41.315263812886634" />
+      <entry key="H1" value="63.29811543886349" />
+      <entry key="H2" value="144.67317661649986" />
+      <entry key="H4" value="277.4284697408285" />
+      <entry key="D1" value="523.5283363053112" />
+      <entry key="W1" value="587.5072731676928" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -96,41 +107,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go 构建.go build kratos-article/.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build kratos-article/cmd/kratos-article.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build kratos-demo/.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build kratos-demo/cmd/kratos-demo.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/codelamb/code/go/Go-CloudNative&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build kratos-article/.executor": "Run",
+    "Go 构建.go build kratos-article/cmd/kratos-article.executor": "Run",
+    "Go 构建.go build kratos-demo/.executor": "Run",
+    "Go 构建.go build kratos-demo/cmd/kratos-demo.executor": "Run",
+    "Makefile 目标.validate.executor": "Run",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "go.sdk.automatically.set": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/codelamb/code/go/Go-CloudNative",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "to.speed.mode.migration.done": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -143,7 +155,6 @@
           <value>
             <map>
               <entry key="go build kratos-article/cmd/kratos-article" value="STOPPED" />
-              <entry key="go build kratos-demo/cmd/kratos-demo" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -234,6 +245,12 @@
       <auto_managed_config_id value="$PROJECT_DIR$/basic/wire" />
       <method v="2" />
     </configuration>
+    <configuration name="validate" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/kratos/kratos-article/Makefile" target="validate" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go 构建.go build kratos-article/cmd/kratos-article" />
       <item itemvalue="Go 构建.go build github.com/codeLambQ/client" />
@@ -244,7 +261,13 @@
       <item itemvalue="Go 构建.go build kratos-demo/cmd/kratos-demo" />
       <item itemvalue="Go 构建.go build portobuf/main" />
       <item itemvalue="Go 构建.go build wire" />
+      <item itemvalue="Makefile 目标.validate" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile 目标.validate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -270,6 +293,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wire 依赖注入插件简单使用" />
     <MESSAGE value="kratos 创建项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="kratos 创建项目" />
+    <MESSAGE value="kratos 对数据库进行操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="kratos 对数据库进行操作" />
   </component>
 </project>

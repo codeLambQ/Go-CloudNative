@@ -163,3 +163,64 @@ _ = d.rdb.Close()
 return d, cleanup, nil
 }
 ```
+
+## 参数校验
+```shell
+# 1. 安装插件
+go install github.com/envoyproxy/protoc-gen-validate@latest
+
+# proto 文件导入
+import "validate/validate.proto";
+
+# 参数校验，请求参数必须为 qiu
+string name = 1 [(validate.rules).string.const = "qiu"];
+# {"code":400, "reason":"VALIDATOR", "message":"invalid HelloRequest.Name: value must equal qiu", "metadata":{}}
+
+.PHONY: validate
+
+protoc --proto_path=. \
+       --proto_path=./third_party \
+       --go_out=paths=source_relative:. \
+       --validate_out=paths=source_relative,lang=go:. \
+       $(API_PROTO_FILES)
+       
+```
+
+## Jagger 分布式链路追踪
+```shell
+# 1. 安装 Jagger
+docker run -d --name jaeger --restart=always -e COLLECTOR_OTLP_ENABLED=true   -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 -p 5775:5775/udp  -p 6831:6831/udp  -p 6832:6832/udp  -p 5778:5778  -p 16686:16686  -p 14250:14250 -p 14268:14268  -p 14269:14269  -p 4317:4317  -p 4318:4318  -p 9411:9411  jaegertracing/all-in-one:1.56
+```
+
+```go
+// 1. 初始化 Jagger
+func initTracer(url string) error {
+// 创建 Jaeger exporter
+exp, err := jaeger.New(jaeger.WithCollectorEndpoint(jaeger.WithEndpoint(url)))
+if err != nil {
+return err
+}
+tp := tracesdk.NewTracerProvider(
+// 将基于父span的采样率设置为100%
+tracesdk.WithSampler(tracesdk.ParentBased(tracesdk.TraceIDRatioBased(1.0))),
+// 始终确保在生产中批量处理
+tracesdk.WithBatcher(exp),
+// 在资源中记录有关此应用程序的信息
+tracesdk.WithResource(resource.NewSchemaless(
+semconv.ServiceNameKey.String("kratos-trace"),
+attribute.String("exporter", "jaeger"),
+attribute.Float64("float", 312.23),
+)),
+)
+otel.SetTracerProvider(tp)
+return nil
+}
+
+# 2. 在 main() 里追加
+initTracer("http://localhost:14268/api/traces")
+
+// 3. 在http服务中间件里添加链路追踪中间件
+// 添加链路追踪中间件
+tracing.Server()
+```
+
