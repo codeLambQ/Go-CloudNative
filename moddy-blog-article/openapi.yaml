@@ -3,19 +3,95 @@
 
 openapi: 3.0.3
 info:
-    title: Greeter API
-    description: The greeting service definition.
+    title: ArticleService API
     version: 0.0.1
 paths:
-    /helloworld/{name}:
+    /v1/article:
         get:
             tags:
-                - Greeter
-                - subgroup
-            description: Sends a greeting
-            operationId: Greeter_SayHello
+                - ArticleService
+            operationId: ArticleService_ListArticle
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/article.v1.ListArticleRequest'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.ListArticleReply'
+        post:
+            tags:
+                - ArticleService
+            operationId: ArticleService_CreateArticle
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/article.v1.CreateArticleRequest'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.CreateArticleReply'
+    /v1/article/{id}:
+        get:
+            tags:
+                - ArticleService
+            operationId: ArticleService_GetArticle
             parameters:
-                - name: name
+                - name: id
+                  in: path
+                  required: true
+                  schema:
+                    type: string
+                - name: title
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.GetArticleReply'
+        put:
+            tags:
+                - ArticleService
+            operationId: ArticleService_UpdateArticle
+            parameters:
+                - name: id
+                  in: path
+                  required: true
+                  schema:
+                    type: string
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/article.v1.UpdateArticleRequest'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.UpdateArticleReply'
+        delete:
+            tags:
+                - ArticleService
+            operationId: ArticleService_DeleteArticle
+            parameters:
+                - name: id
                   in: path
                   required: true
                   schema:
@@ -26,14 +102,63 @@ paths:
                     content:
                         application/json:
                             schema:
-                                $ref: '#/components/schemas/helloworld.v1.HelloReply'
+                                $ref: '#/components/schemas/article.v1.DeleteArticleReply'
 components:
     schemas:
-        helloworld.v1.HelloReply:
+        article.v1.Article:
             type: object
             properties:
-                message:
+                id:
                     type: string
-            description: The response message containing the greetings
+                title:
+                    type: string
+                content:
+                    type: string
+                like:
+                    type: string
+        article.v1.CreateArticleReply:
+            type: object
+            properties:
+                Article:
+                    $ref: '#/components/schemas/article.v1.Article'
+        article.v1.CreateArticleRequest:
+            type: object
+            properties:
+                title:
+                    type: string
+                content:
+                    type: string
+        article.v1.DeleteArticleReply:
+            type: object
+            properties: {}
+        article.v1.GetArticleReply:
+            type: object
+            properties:
+                Article:
+                    $ref: '#/components/schemas/article.v1.Article'
+        article.v1.ListArticleReply:
+            type: object
+            properties:
+                Articles:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/article.v1.Article'
+        article.v1.ListArticleRequest:
+            type: object
+            properties: {}
+        article.v1.UpdateArticleReply:
+            type: object
+            properties:
+                Article:
+                    $ref: '#/components/schemas/article.v1.Article'
+        article.v1.UpdateArticleRequest:
+            type: object
+            properties:
+                id:
+                    type: string
+                title:
+                    type: string
+                content:
+                    type: string
 tags:
-    - name: Greeter
+    - name: ArticleService

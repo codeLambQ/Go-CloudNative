@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="kratos 增加日志、参数校验、链路追踪中间件">
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="新建 moddy-blog-article 和 moddy-blog-comment 微服务框架">
+      <change afterPath="$PROJECT_DIR$/moddy-blog-article/api/article/v1/article.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/error_reason.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/error_reason.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter_grpc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter_http.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire_gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/biz/greeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/biz/greeter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/greeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/greeter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/grpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/server/grpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/server/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/service/greeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/service/greeter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/openapi.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,60 +54,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000008295229867" />
-      <entry key="S2" value="1.0366343284820247" />
-      <entry key="S5" value="1.4572050244378814" />
-      <entry key="S10" value="2.2969266701974096" />
-      <entry key="S30" value="4.868872055631817" />
-      <entry key="S60" value="7.5514286327321685" />
-      <entry key="M2" value="12.369437586088857" />
-      <entry key="M5" value="23.56563518897397" />
-      <entry key="M10" value="32.54757579854704" />
-      <entry key="M15" value="36.779400164921505" />
-      <entry key="M30" value="42.74880792429434" />
-      <entry key="H1" value="60.40653948801153" />
-      <entry key="H2" value="124.79855632665182" />
-      <entry key="H4" value="231.64661549659624" />
-      <entry key="D1" value="432.80344968691537" />
-      <entry key="W1" value="485.51668061425664" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000005340086" />
+      <entry key="S10" value="1.0000235431625548" />
+      <entry key="S30" value="1.0448262045009853" />
+      <entry key="S60" value="1.4190344280719978" />
+      <entry key="M2" value="2.6294396775418845" />
+      <entry key="M5" value="7.066786312198593" />
+      <entry key="M10" value="18.322014336647275" />
+      <entry key="M15" value="32.5350535912645" />
+      <entry key="M30" value="71.20419136488815" />
+      <entry key="H1" value="121.98788289275507" />
+      <entry key="H2" value="196.25372357691097" />
+      <entry key="H4" value="314.97996846827266" />
+      <entry key="D1" value="590.6217986239889" />
+      <entry key="W1" value="673.6275905445355" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.9285481908669175E-118" />
-      <entry key="S2" value="3.726555759818667E-30" />
-      <entry key="S5" value="1.692478067894687E-12" />
-      <entry key="S10" value="1.3009529227583529E-6" />
-      <entry key="S30" value="0.010972131321246869" />
-      <entry key="S60" value="0.11243200858351361" />
-      <entry key="M2" value="0.43215483897277296" />
-      <entry key="M5" value="1.2316739488333073" />
-      <entry key="M10" value="1.8793653583144438" />
-      <entry key="M15" value="2.1863244328646596" />
-      <entry key="M30" value="2.794717331086122" />
-      <entry key="H1" value="7.306932054587301" />
-      <entry key="H2" value="24.216004351479533" />
-      <entry key="H4" value="50.1532642490786" />
-      <entry key="D1" value="95.52750226006597" />
-      <entry key="W1" value="106.95895206130426" />
+      <entry key="MS500" value="1.866537786257602E-134" />
+      <entry key="S2" value="3.6962409556049786E-34" />
+      <entry key="S5" value="4.272028608442642E-14" />
+      <entry key="S10" value="2.318501762043786E-7" />
+      <entry key="S30" value="0.010595991480569595" />
+      <entry key="S60" value="0.1748105782050279" />
+      <entry key="M2" value="0.7659456929006779" />
+      <entry key="M5" value="3.289302142493414" />
+      <entry key="M10" value="11.663137247293347" />
+      <entry key="M15" value="21.170443206528127" />
+      <entry key="M30" value="42.39399224728185" />
+      <entry key="H1" value="63.40281720446221" />
+      <entry key="H2" value="86.00188427484106" />
+      <entry key="H4" value="116.46888683153291" />
+      <entry key="D1" value="180.93858024694055" />
+      <entry key="W1" value="199.57521722998123" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9592641193252643" />
-      <entry key="MS500" value="0.991717556818538" />
-      <entry key="S2" value="1.034518320835036" />
-      <entry key="S5" value="1.4561676039148175" />
-      <entry key="S10" value="2.296181764446406" />
-      <entry key="S30" value="4.876922285496674" />
-      <entry key="S60" value="7.650083394083232" />
-      <entry key="M2" value="12.777005170836112" />
-      <entry key="M5" value="24.774273394860714" />
-      <entry key="M10" value="34.41120680858733" />
-      <entry key="M15" value="38.954028841038806" />
-      <entry key="M30" value="45.53661505908264" />
-      <entry key="H1" value="67.70668995123339" />
-      <entry key="H2" value="149.00511642362753" />
-      <entry key="H4" value="281.79053364200524" />
-      <entry key="D1" value="528.3280443668693" />
-      <entry key="W1" value="592.475168645072" />
+      <entry key="MS100" value="3.1984054909562848E-9" />
+      <entry key="MS500" value="0.01999800646631731" />
+      <entry key="S2" value="0.37605093784717186" />
+      <entry key="S5" value="0.6762365973555263" />
+      <entry key="S10" value="0.8223572323881561" />
+      <entry key="S30" value="0.9909777743662005" />
+      <entry key="S60" value="1.5565735613869731" />
+      <entry key="M2" value="3.37068922792623" />
+      <entry key="M5" value="10.334775039590491" />
+      <entry key="M10" value="29.95188857633223" />
+      <entry key="M15" value="53.666005761959596" />
+      <entry key="M30" value="113.55953021494079" />
+      <entry key="H1" value="185.36186836898756" />
+      <entry key="H2" value="282.23501293452784" />
+      <entry key="H4" value="431.43366565872094" />
+      <entry key="D1" value="771.5560100183374" />
+      <entry key="W1" value="873.2021064022059" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -105,6 +126,10 @@
     "Go 构建.go build kratos-article/cmd/kratos-article.executor": "Run",
     "Go 构建.go build kratos-demo/.executor": "Run",
     "Go 构建.go build kratos-demo/cmd/kratos-demo.executor": "Run",
+    "Go 构建.go build moddy-blog-article/.executor": "Run",
+    "Go 构建.go build moddy-blog-article/cmd/moddy-blog-article.executor": "Run",
+    "Makefile 目标.all.executor": "Run",
+    "Makefile 目标.api.executor": "Run",
     "Makefile 目标.validate.executor": "Run",
     "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
     "RunOnceActivity.GoLinterPluginStorageMigration": "true",
@@ -146,13 +171,14 @@
           <value>
             <map>
               <entry key="go build kratos-article/cmd/kratos-article" value="STOPPED" />
+              <entry key="go build moddy-blog-article/cmd/moddy-blog-article" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build kratos-article/cmd/kratos-article">
+  <component name="RunManager" selected="Go 构建.go build moddy-blog-article/cmd/moddy-blog-article">
     <configuration name="go build github.com/codeLambQ/client" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Go-CloudNative" />
       <working_directory value="$PROJECT_DIR$/basic/rpc" />
@@ -218,9 +244,10 @@
       <auto_managed_config_id value="$PROJECT_DIR$/kratos/kratos-demo/cmd/kratos-demo" />
       <method v="2" />
     </configuration>
-    <configuration name="go build moddy-blog-article/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+    <configuration name="go build moddy-blog-article/cmd/moddy-blog-article" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Go-CloudNative" />
       <working_directory value="$PROJECT_DIR$/moddy-blog-article" />
+      <parameters value="-conf configs/config.yaml" />
       <kind value="PACKAGE" />
       <package value="moddy-blog-article/cmd/moddy-blog-article" />
       <directory value="$PROJECT_DIR$" />
@@ -254,6 +281,18 @@
       <auto_managed_config_id value="$PROJECT_DIR$/basic/wire" />
       <method v="2" />
     </configuration>
+    <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/moddy-blog-article/Makefile" target="all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="api" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/moddy-blog-article/Makefile" target="api" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="validate" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/kratos/kratos-article/Makefile" target="validate" workingDirectory="" arguments="">
         <envs />
@@ -261,7 +300,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go 构建.go build moddy-blog-article/" />
+      <item itemvalue="Go 构建.go build moddy-blog-article/cmd/moddy-blog-article" />
       <item itemvalue="Go 构建.go build moddy-blog-comment/" />
       <item itemvalue="Go 构建.go build kratos-article/cmd/kratos-article" />
       <item itemvalue="Go 构建.go build github.com/codeLambQ/client" />
@@ -272,10 +311,14 @@
       <item itemvalue="Go 构建.go build kratos-demo/cmd/kratos-demo" />
       <item itemvalue="Go 构建.go build portobuf/main" />
       <item itemvalue="Go 构建.go build wire" />
+      <item itemvalue="Makefile 目标.all" />
+      <item itemvalue="Makefile 目标.api" />
       <item itemvalue="Makefile 目标.validate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile 目标.all" />
+        <item itemvalue="Makefile 目标.api" />
         <item itemvalue="Makefile 目标.validate" />
       </list>
     </recent_temporary>
@@ -306,7 +349,8 @@
     <MESSAGE value="kratos 创建项目" />
     <MESSAGE value="kratos 对数据库进行操作" />
     <MESSAGE value="kratos 增加日志、参数校验、链路追踪中间件" />
-    <option name="LAST_COMMIT_MESSAGE" value="kratos 增加日志、参数校验、链路追踪中间件" />
+    <MESSAGE value="新建 moddy-blog-article 和 moddy-blog-comment 微服务框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建 moddy-blog-article 和 moddy-blog-comment 微服务框架" />
   </component>
   <component name="VgoModernizerVersionTracker">
     <upgrades>

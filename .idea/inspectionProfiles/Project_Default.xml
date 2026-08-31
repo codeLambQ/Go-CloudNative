@@ -6,6 +6,7 @@
         <function importPath="entgo.io/ent/dialect/sql" name="Open" />
         <function importPath="kratos-article/internal/data/ent" name="NewClient" />
         <function importPath="github.com/go-redis/redis" name="NewClient" />
+        <function importPath="moddy-blog-article/internal/data/ent" name="NewClient" />
       </functions>
     </inspection_tool>
   </profile>
