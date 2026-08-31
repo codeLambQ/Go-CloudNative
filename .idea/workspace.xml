@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="kratos 对数据库进行操作">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="kratos 增加日志、参数校验、链路追踪中间件">
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/error_reason.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/error_reason.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.proto" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/api/helloworld/v1/greeter.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/cmd/kratos-article/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/cmd/kratos-article/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/kratos-article/internal/server/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/kratos-article/internal/server/http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study.md" beforeDir="false" afterPath="$PROJECT_DIR$/study.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,60 +33,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000003249" />
-      <entry key="S2" value="1.0012913565388706" />
-      <entry key="S5" value="1.137291663690218" />
-      <entry key="S10" value="1.7512083390934081" />
-      <entry key="S30" value="3.723594259146976" />
-      <entry key="S60" value="5.7544282687208925" />
-      <entry key="M2" value="10.238114288242466" />
-      <entry key="M5" value="20.91165105025134" />
-      <entry key="M10" value="29.19428653680753" />
-      <entry key="M15" value="33.02469405079826" />
-      <entry key="M30" value="38.47592846804053" />
-      <entry key="H1" value="55.93081456013138" />
-      <entry key="H2" value="120.35554406704735" />
-      <entry key="H4" value="227.16964098778112" />
-      <entry key="D1" value="427.9672922832322" />
-      <entry key="W1" value="480.54295578217494" />
+      <entry key="MS500" value="1.0000008295229867" />
+      <entry key="S2" value="1.0366343284820247" />
+      <entry key="S5" value="1.4572050244378814" />
+      <entry key="S10" value="2.2969266701974096" />
+      <entry key="S30" value="4.868872055631817" />
+      <entry key="S60" value="7.5514286327321685" />
+      <entry key="M2" value="12.369437586088857" />
+      <entry key="M5" value="23.56563518897397" />
+      <entry key="M10" value="32.54757579854704" />
+      <entry key="M15" value="36.779400164921505" />
+      <entry key="M30" value="42.74880792429434" />
+      <entry key="H1" value="60.40653948801153" />
+      <entry key="H2" value="124.79855632665182" />
+      <entry key="H4" value="231.64661549659624" />
+      <entry key="D1" value="432.80344968691537" />
+      <entry key="W1" value="485.51668061425664" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.22222322343649E-90" />
-      <entry key="S2" value="5.3548500728443E-23" />
-      <entry key="S5" value="1.2345222631251648E-9" />
-      <entry key="S10" value="3.5135773558957844E-5" />
-      <entry key="S30" value="0.03291953128381869" />
-      <entry key="S60" value="0.19474723145286302" />
-      <entry key="M2" value="0.5687613047494714" />
-      <entry key="M5" value="1.3747129390935207" />
-      <entry key="M10" value="1.985497523471352" />
-      <entry key="M15" value="2.2678797840881333" />
-      <entry key="M30" value="2.8463650551005943" />
-      <entry key="H1" value="7.374140777730329" />
-      <entry key="H2" value="24.327118110293284" />
-      <entry key="H4" value="50.26819526176913" />
-      <entry key="D1" value="95.56395254311434" />
-      <entry key="W1" value="106.96478141722832" />
+      <entry key="MS500" value="1.9285481908669175E-118" />
+      <entry key="S2" value="3.726555759818667E-30" />
+      <entry key="S5" value="1.692478067894687E-12" />
+      <entry key="S10" value="1.3009529227583529E-6" />
+      <entry key="S30" value="0.010972131321246869" />
+      <entry key="S60" value="0.11243200858351361" />
+      <entry key="M2" value="0.43215483897277296" />
+      <entry key="M5" value="1.2316739488333073" />
+      <entry key="M10" value="1.8793653583144438" />
+      <entry key="M15" value="2.1863244328646596" />
+      <entry key="M30" value="2.794717331086122" />
+      <entry key="H1" value="7.306932054587301" />
+      <entry key="H2" value="24.216004351479533" />
+      <entry key="H4" value="50.1532642490786" />
+      <entry key="D1" value="95.52750226006597" />
+      <entry key="W1" value="106.95895206130426" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395227492140118" />
-      <entry key="MS500" value="0.987600861445694" />
-      <entry key="S2" value="0.9981732705940861" />
-      <entry key="S5" value="1.1358847874244542" />
-      <entry key="S10" value="1.7501850298283457" />
-      <entry key="S30" value="3.748821738107466" />
-      <entry key="S60" value="5.925669333548431" />
-      <entry key="M2" value="10.774663169997217" />
-      <entry key="M5" value="22.26070538534224" />
-      <entry key="M10" value="31.163186357825296" />
-      <entry key="M15" value="35.28045838600107" />
-      <entry key="M30" value="41.315263812886634" />
-      <entry key="H1" value="63.29811543886349" />
-      <entry key="H2" value="144.67317661649986" />
-      <entry key="H4" value="277.4284697408285" />
-      <entry key="D1" value="523.5283363053112" />
-      <entry key="W1" value="587.5072731676928" />
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.991717556818538" />
+      <entry key="S2" value="1.034518320835036" />
+      <entry key="S5" value="1.4561676039148175" />
+      <entry key="S10" value="2.296181764446406" />
+      <entry key="S30" value="4.876922285496674" />
+      <entry key="S60" value="7.650083394083232" />
+      <entry key="M2" value="12.777005170836112" />
+      <entry key="M5" value="24.774273394860714" />
+      <entry key="M10" value="34.41120680858733" />
+      <entry key="M15" value="38.954028841038806" />
+      <entry key="M30" value="45.53661505908264" />
+      <entry key="H1" value="67.70668995123339" />
+      <entry key="H2" value="149.00511642362753" />
+      <entry key="H4" value="281.79053364200524" />
+      <entry key="D1" value="528.3280443668693" />
+      <entry key="W1" value="592.475168645072" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -227,6 +218,24 @@
       <auto_managed_config_id value="$PROJECT_DIR$/kratos/kratos-demo/cmd/kratos-demo" />
       <method v="2" />
     </configuration>
+    <configuration name="go build moddy-blog-article/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go-CloudNative" />
+      <working_directory value="$PROJECT_DIR$/moddy-blog-article" />
+      <kind value="PACKAGE" />
+      <package value="moddy-blog-article/cmd/moddy-blog-article" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build moddy-blog-comment/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go-CloudNative" />
+      <working_directory value="$PROJECT_DIR$/moddy-blog-comment" />
+      <kind value="PACKAGE" />
+      <package value="moddy-blog-comment/cmd/moddy-blog-comment" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/moddy-blog-comment/cmd/moddy-blog-comment" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build portobuf/main" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Go-CloudNative" />
       <working_directory value="$PROJECT_DIR$/basic/protobuf" />
@@ -252,6 +261,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go 构建.go build moddy-blog-article/" />
+      <item itemvalue="Go 构建.go build moddy-blog-comment/" />
       <item itemvalue="Go 构建.go build kratos-article/cmd/kratos-article" />
       <item itemvalue="Go 构建.go build github.com/codeLambQ/client" />
       <item itemvalue="Go 构建.go build github.com/codeLambQ/server" />
@@ -294,6 +305,21 @@
     <MESSAGE value="wire 依赖注入插件简单使用" />
     <MESSAGE value="kratos 创建项目" />
     <MESSAGE value="kratos 对数据库进行操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="kratos 对数据库进行操作" />
+    <MESSAGE value="kratos 增加日志、参数校验、链路追踪中间件" />
+    <option name="LAST_COMMIT_MESSAGE" value="kratos 增加日志、参数校验、链路追踪中间件" />
+  </component>
+  <component name="VgoModernizerVersionTracker">
+    <upgrades>
+      <map>
+        <entry key="$PROJECT_DIR$/go.mod">
+          <value>
+            <VersionUpgradeInfo>
+              <version>1.27</version>
+              <timestamp>1788157774454</timestamp>
+            </VersionUpgradeInfo>
+          </value>
+        </entry>
+      </map>
+    </upgrades>
   </component>
 </project>
