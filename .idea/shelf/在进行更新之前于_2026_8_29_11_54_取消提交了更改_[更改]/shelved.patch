@@ -1,0 +1,18 @@
+Index: .idea/Go-CloudNative.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"Go\" enabled=\"true\" />\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Go-CloudNative.iml b/.idea/Go-CloudNative.iml
+--- a/.idea/Go-CloudNative.iml	(revision 71e22d05bc3fee035a3095df4fddeb1877e733c7)
++++ b/.idea/Go-CloudNative.iml	(date 1787663386362)
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <module type="WEB_MODULE" version="4">
+   <component name="Go" enabled="true" />
++  <component name="GoModuleSettings" enabled="true" />
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+     <orderEntry type="inheritedJdk" />
