@@ -101,3 +101,65 @@ go get golang.org/x/tools@latest
 go mod tidy
 go generate ./...
 ```
+
+## ent 框架
+### 安装 ent 插件、生成实体类
+```shell
+go install entgo.io/ent/cmd/ent@latest
+
+# 生成一个实体类
+ent new Article
+```
+
+### 对实体类添加字段(Fields 方法)
+```go
+// Fields of the Article.
+func (Article) Fields() []ent.Field {
+	return []ent.Field{
+		field.Int64("id"),
+		field.String("title"),
+		field.String("content"),
+		field.Time("created_at").Default(time.Now).SchemaType(map[string]string{
+			dialect.MySQL: "datetime",
+		}),
+		field.Time("updated_at").Default(time.Now).SchemaType(map[string]string{
+			dialect.MySQL: "datetime",
+		}),
+	}
+}
+
+// 在 generate.go 文件中生成增删该查代码
+
+// 对 mysql 和 redis 客户端实例化
+func NewData(c *conf.Data, logger log.Logger) (*Data, func(), error) {
+loggerHelper := log.NewHelper(logger)
+// 创建 mysql 客户端
+driver, err := sql.Open(c.Database.Driver, c.Database.Source)
+if err != nil {
+loggerHelper.Error("数据库连接失败: " + err.Error())
+return nil, nil, err
+}
+mysqlClient := ent.NewClient(ent.Driver(driver))
+loggerHelper.Info("数据库客户端创建成功")
+
+err = mysqlClient.Schema.Create(context.Background())
+if err != nil {
+loggerHelper.Error("数据库表创建失败: " + err.Error())
+return nil, nil, err
+}
+
+// 创建 redis 客户端
+redisClient := redis.NewClient(&redis.Options{
+Addr: c.Redis.Addr,
+})
+d := &Data{
+db:  mysqlClient,
+rdb: redisClient,
+}
+cleanup := func() {
+_ = d.db.Close()
+_ = d.rdb.Close()
+}
+return d, cleanup, nil
+}
+```
