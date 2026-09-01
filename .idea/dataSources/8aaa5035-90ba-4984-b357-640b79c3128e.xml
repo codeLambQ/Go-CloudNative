@@ -6,9 +6,7 @@
       <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <Grants>|root||root||ALLOW_NONEXISTENT_DEFINER|G
-|root||root|localhost|ALLOW_NONEXISTENT_DEFINER|G
-|root||root||ALTER|G
+      <Grants>|root||root||ALTER|G
 |root||root|localhost|ALTER|G
 |root||root||ALTER ROUTINE|G
 |root||root|localhost|ALTER ROUTINE|G
@@ -72,8 +70,6 @@
 |root||root|localhost|FIREWALL_EXEMPT|G
 |root||root||FLUSH_OPTIMIZER_COSTS|G
 |root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
-|root||root||FLUSH_PRIVILEGES|G
-|root||root|localhost|FLUSH_PRIVILEGES|G
 |root||root||FLUSH_STATUS|G
 |root||root|localhost|FLUSH_STATUS|G
 |root||root||FLUSH_TABLES|G
@@ -94,8 +90,6 @@
 |root||root|localhost|INSERT|G
 |root||root||LOCK TABLES|G
 |root||root|localhost|LOCK TABLES|G
-|root||root||OPTIMIZE_LOCAL_TABLE|G
-|root||root|localhost|OPTIMIZE_LOCAL_TABLE|G
 |root||root||PASSWORDLESS_USER_ADMIN|G
 |root||root|localhost|PASSWORDLESS_USER_ADMIN|G
 |root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
@@ -131,8 +125,8 @@
 |root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
 |root||root||SESSION_VARIABLES_ADMIN|G
 |root||root|localhost|SESSION_VARIABLES_ADMIN|G
-|root||root||SET_ANY_DEFINER|G
-|root||root|localhost|SET_ANY_DEFINER|G
+|root||root||SET_USER_ID|G
+|root||root|localhost|SET_USER_ID|G
 |root||root||SHOW DATABASES|G
 |root||root|localhost|SHOW DATABASES|G
 |root||root||SHOW VIEW|G
@@ -157,8 +151,6 @@
 |root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
 |root||root||TELEMETRY_LOG_ADMIN|G
 |root||root|localhost|TELEMETRY_LOG_ADMIN|G
-|root||root||TRANSACTION_GTID_TAG|G
-|root||root|localhost|TRANSACTION_GTID_TAG|G
 |root||root||TRIGGER|G
 |root||root|localhost|TRIGGER|G
 |root||root||UPDATE|G
@@ -169,7 +161,7 @@
 |root||root|localhost|grant option|G
 performance_schema|schema||mysql.session|localhost|SELECT|G
 sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
-      <ServerVersion>8.4.11</ServerVersion>
+      <ServerVersion>8.0.46</ServerVersion>
     </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -1085,7 +1077,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="292" parent="1" name="test">
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-08-26.15:12:37</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-09-01.09:11:05</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="293" parent="1" name="mysql.infoschema">

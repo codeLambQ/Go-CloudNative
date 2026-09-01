@@ -1,3 +1,7 @@
+# Locate go even if it is not on PATH (e.g. installed under ~/soft/goX.Y.Z).
+GO_BIN := $(or $(shell command -v go 2>/dev/null),$(firstword $(wildcard $(HOME)/soft/go*/bin/go /usr/local/go/bin/go)))
+export PATH := $(patsubst %/,%,$(dir $(GO_BIN))):$(HOME)/go/bin:$(PATH)
+
 GOHOSTOS:=$(shell go env GOHOSTOS)
 GOPATH:=$(shell go env GOPATH)
 VERSION=$(shell git describe --tags --always)

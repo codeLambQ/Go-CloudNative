@@ -3,15 +3,13 @@
 
 openapi: 3.0.3
 info:
-    title: Greeter API
-    description: The greeting service definition.
+    title: ""
     version: 0.0.1
 paths:
     /helloworld/{name}:
         get:
             tags:
                 - Greeter
-                - subgroup
             description: Sends a greeting
             operationId: Greeter_SayHello
             parameters:
@@ -27,8 +25,158 @@ paths:
                         application/json:
                             schema:
                                 $ref: '#/components/schemas/helloworld.v1.HelloReply'
+    /v1/article:
+        get:
+            tags:
+                - ArticleServer
+            description: 查询文章列表
+            operationId: ArticleServer_ListArticle
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.ListArticleReply'
+        post:
+            tags:
+                - ArticleServer
+            description: 创建文章
+            operationId: ArticleServer_CreateArticle
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/article.v1.CreateArticleRequest'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.CreateArticleReply'
+    /v1/article/{id}:
+        get:
+            tags:
+                - ArticleServer
+            description: 根据 id 查询文章
+            operationId: ArticleServer_GetArticle
+            parameters:
+                - name: id
+                  in: path
+                  required: true
+                  schema:
+                    type: string
+                - name: title
+                  in: query
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.GetArticleReply'
+        put:
+            tags:
+                - ArticleServer
+            description: 根据 id 更新文章
+            operationId: ArticleServer_UpdateArticle
+            parameters:
+                - name: id
+                  in: path
+                  required: true
+                  schema:
+                    type: string
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/article.v1.UpdateArticleRequest'
+                required: true
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.UpdateArticleReply'
+        delete:
+            tags:
+                - ArticleServer
+            description: 根据 id 删除文章
+            operationId: ArticleServer_DeleteArticle
+            parameters:
+                - name: id
+                  in: path
+                  required: true
+                  schema:
+                    type: string
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/article.v1.DeleteArticleReply'
 components:
     schemas:
+        article.v1.Article:
+            type: object
+            properties:
+                id:
+                    type: string
+                title:
+                    type: string
+                content:
+                    type: string
+                like:
+                    type: string
+        article.v1.CreateArticleReply:
+            type: object
+            properties:
+                article:
+                    $ref: '#/components/schemas/article.v1.Article'
+        article.v1.CreateArticleRequest:
+            type: object
+            properties:
+                id:
+                    type: string
+                title:
+                    type: string
+                content:
+                    type: string
+        article.v1.DeleteArticleReply:
+            type: object
+            properties: {}
+        article.v1.GetArticleReply:
+            type: object
+            properties:
+                article:
+                    $ref: '#/components/schemas/article.v1.Article'
+        article.v1.ListArticleReply:
+            type: object
+            properties:
+                articles:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/article.v1.Article'
+        article.v1.UpdateArticleReply:
+            type: object
+            properties:
+                article:
+                    $ref: '#/components/schemas/article.v1.Article'
+        article.v1.UpdateArticleRequest:
+            type: object
+            properties:
+                id:
+                    type: string
+                title:
+                    type: string
+                content:
+                    type: string
         helloworld.v1.HelloReply:
             type: object
             properties:
@@ -36,4 +184,7 @@ components:
                     type: string
             description: The response message containing the greetings
 tags:
+    - name: ArticleServer
+      description: 文章服务 proto 文件
     - name: Greeter
+      description: The greeting service definition.

@@ -5,29 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="新建 moddy-blog-article 和 moddy-blog-comment 微服务框架">
-      <change afterPath="$PROJECT_DIR$/moddy-blog-article/api/article/v1/article.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8aaa5035-90ba-4984-b357-640b79c3128e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8aaa5035-90ba-4984-b357-640b79c3128e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/error_reason.pb.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/error_reason.proto" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter.pb.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter.proto" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter_grpc.pb.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/api/helloworld/v1/greeter_http.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire_gen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/biz/greeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/biz/greeter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/greeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/greeter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/grpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/server/grpc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/server/http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/service/greeter.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/service/greeter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/openapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/cmd/moddy-blog-article/wire_gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/biz/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/biz/biz.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/biz/greeter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/greeter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/grpc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/http.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/server/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/service/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/service/greeter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/openapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/errors/errors.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/api/annotations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/api/client.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/api/field_behavior.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/api/http.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/api/httpbody.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/any.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/api.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/compiler/plugin.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/descriptor.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/duration.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/empty.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/field_mask.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/source_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/struct.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/timestamp.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/type.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/google/protobuf/wrappers.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/openapi/v3/annotations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/openapi/v3/openapi.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/validate/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/moddy-blog-article/third_party/validate/validate.proto" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,68 +82,68 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/env/go" />
+  <component name="GOROOT" url="file://$USER_HOME$/soft/go1.27.0" />
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000005340086" />
-      <entry key="S10" value="1.0000235431625548" />
-      <entry key="S30" value="1.0448262045009853" />
-      <entry key="S60" value="1.4190344280719978" />
-      <entry key="M2" value="2.6294396775418845" />
-      <entry key="M5" value="7.066786312198593" />
-      <entry key="M10" value="18.322014336647275" />
-      <entry key="M15" value="32.5350535912645" />
-      <entry key="M30" value="71.20419136488815" />
-      <entry key="H1" value="121.98788289275507" />
-      <entry key="H2" value="196.25372357691097" />
-      <entry key="H4" value="314.97996846827266" />
-      <entry key="D1" value="590.6217986239889" />
-      <entry key="W1" value="673.6275905445355" />
+      <entry key="MS100" value="1.000315556257753" />
+      <entry key="MS500" value="1.23369467527472" />
+      <entry key="S2" value="2.3658459973202572" />
+      <entry key="S5" value="3.7374836716246076" />
+      <entry key="S10" value="5.1737788617957285" />
+      <entry key="S30" value="8.555789777371167" />
+      <entry key="S60" value="11.014617075076561" />
+      <entry key="M2" value="13.335226799302653" />
+      <entry key="M5" value="17.910223700680497" />
+      <entry key="M10" value="26.823752040859105" />
+      <entry key="M15" value="36.41216194558634" />
+      <entry key="M30" value="68.21141208554363" />
+      <entry key="H1" value="124.51566201845021" />
+      <entry key="H2" value="209.79763513262216" />
+      <entry key="H4" value="339.2764691024531" />
+      <entry key="D1" value="646.8057379699411" />
+      <entry key="W1" value="742.2038651530669" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.866537786257602E-134" />
-      <entry key="S2" value="3.6962409556049786E-34" />
-      <entry key="S5" value="4.272028608442642E-14" />
-      <entry key="S10" value="2.318501762043786E-7" />
-      <entry key="S30" value="0.010595991480569595" />
-      <entry key="S60" value="0.1748105782050279" />
-      <entry key="M2" value="0.7659456929006779" />
-      <entry key="M5" value="3.289302142493414" />
-      <entry key="M10" value="11.663137247293347" />
-      <entry key="M15" value="21.170443206528127" />
-      <entry key="M30" value="42.39399224728185" />
-      <entry key="H1" value="63.40281720446221" />
-      <entry key="H2" value="86.00188427484106" />
-      <entry key="H4" value="116.46888683153291" />
-      <entry key="D1" value="180.93858024694055" />
-      <entry key="W1" value="199.57521722998123" />
+      <entry key="MS100" value="1.4772515842816383E-43" />
+      <entry key="MS500" value="2.9538067898579302E-9" />
+      <entry key="S2" value="0.011147155494551348" />
+      <entry key="S5" value="0.2523628337916253" />
+      <entry key="S10" value="0.828044480624032" />
+      <entry key="S30" value="3.015834398761719" />
+      <entry key="S60" value="5.004061282467964" />
+      <entry key="M2" value="6.86164884838268" />
+      <entry key="M5" value="10.907290905378092" />
+      <entry key="M10" value="19.423839139241682" />
+      <entry key="M15" value="27.5904067789141" />
+      <entry key="M30" value="49.43349201893046" />
+      <entry key="H1" value="79.41043312569393" />
+      <entry key="H2" value="112.98240829136274" />
+      <entry key="H4" value="151.98140114782433" />
+      <entry key="D1" value="230.1472029063585" />
+      <entry key="W1" value="252.81989979586473" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.1984054909562848E-9" />
-      <entry key="MS500" value="0.01999800646631731" />
-      <entry key="S2" value="0.37605093784717186" />
-      <entry key="S5" value="0.6762365973555263" />
-      <entry key="S10" value="0.8223572323881561" />
-      <entry key="S30" value="0.9909777743662005" />
-      <entry key="S60" value="1.5565735613869731" />
-      <entry key="M2" value="3.37068922792623" />
-      <entry key="M5" value="10.334775039590491" />
-      <entry key="M10" value="29.95188857633223" />
-      <entry key="M15" value="53.666005761959596" />
-      <entry key="M30" value="113.55953021494079" />
-      <entry key="H1" value="185.36186836898756" />
-      <entry key="H2" value="282.23501293452784" />
-      <entry key="H4" value="431.43366565872094" />
-      <entry key="D1" value="771.5560100183374" />
-      <entry key="W1" value="873.2021064022059" />
+      <entry key="MS100" value="0.9662411359082717" />
+      <entry key="MS500" value="1.2251272256264516" />
+      <entry key="S2" value="2.369480222280014" />
+      <entry key="S5" value="3.953716766175724" />
+      <entry key="S10" value="5.935815411355955" />
+      <entry key="S30" value="11.45928830888675" />
+      <entry key="S60" value="15.914377334547417" />
+      <entry key="M2" value="20.1208614174527" />
+      <entry key="M5" value="28.76269618938789" />
+      <entry key="M10" value="46.190229966648154" />
+      <entry key="M15" value="63.9443883250409" />
+      <entry key="M30" value="117.59052098878514" />
+      <entry key="H1" value="203.8827895493045" />
+      <entry key="H2" value="322.7491140468833" />
+      <entry key="H4" value="491.23641963387934" />
+      <entry key="D1" value="876.9472082365705" />
+      <entry key="W1" value="995.022854155896" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -130,6 +166,7 @@
     "Go 构建.go build moddy-blog-article/cmd/moddy-blog-article.executor": "Run",
     "Makefile 目标.all.executor": "Run",
     "Makefile 目标.api.executor": "Run",
+    "Makefile 目标.generate.executor": "Run",
     "Makefile 目标.validate.executor": "Run",
     "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
     "RunOnceActivity.GoLinterPluginStorageMigration": "true",
@@ -150,7 +187,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "settings.editor.selected.configurable": "editor.preferences.completion.popup",
     "to.speed.mode.migration.done": "true"
   },
   "keyToStringList": {
@@ -293,6 +330,12 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="generate" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/moddy-blog-article/Makefile" target="generate" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="validate" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/kratos/kratos-article/Makefile" target="validate" workingDirectory="" arguments="">
         <envs />
@@ -311,14 +354,16 @@
       <item itemvalue="Go 构建.go build kratos-demo/cmd/kratos-demo" />
       <item itemvalue="Go 构建.go build portobuf/main" />
       <item itemvalue="Go 构建.go build wire" />
+      <item itemvalue="Makefile 目标.generate" />
       <item itemvalue="Makefile 目标.all" />
       <item itemvalue="Makefile 目标.api" />
       <item itemvalue="Makefile 目标.validate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile 目标.all" />
         <item itemvalue="Makefile 目标.api" />
+        <item itemvalue="Makefile 目标.generate" />
+        <item itemvalue="Makefile 目标.all" />
         <item itemvalue="Makefile 目标.validate" />
       </list>
     </recent_temporary>
@@ -365,5 +410,16 @@
         </entry>
       </map>
     </upgrades>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/moddy-blog-article/internal/data/data.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

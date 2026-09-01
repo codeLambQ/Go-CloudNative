@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+package article.v1;
+option go_package = "moddy-blog-article/api/article/v1;v1";
+
+import "google/api/annotations.proto";
+
+// 文章服务 proto 文件
+service ArticleServer {
+  // 创建文章
+  rpc CreateArticle(CreateArticleRequest) returns (CreateArticleReply) {
+    option (google.api.http) = {
+      post: "/v1/article"
+      body: "*"
+    };
+  }
+
+  // 根据 id 更新文章
+  rpc UpdateArticle(UpdateArticleRequest) returns (UpdateArticleReply) {
+    option (google.api.http) = {
+      put : "/v1/article/{id}"
+      body: "*"
+    };
+  }
+
+  // 根据 id 删除文章
+  rpc DeleteArticle(DeleteArticleRequest) returns (DeleteArticleReply) {
+    option (google.api.http) = {
+      delete: "/v1/article/{id}"
+    };
+  }
+
+  // 根据 id 查询文章
+  rpc GetArticle(GetArticleRequest) returns (GetArticleReply) {
+    option (google.api.http) = {
+      get: "/v1/article/{id}"
+    };
+  }
+
+  // 查询文章列表
+  rpc ListArticle(ListArticleRequest) returns (ListArticleReply) {
+    option (google.api.http) = {
+      get: "/v1/article"
+    };
+  }
+}
+
+message Article {
+  int64  id      = 1;
+  string title   = 2;
+  string content = 3;
+  int64  like    = 4;
+}
+
+message CreateArticleRequest {
+  int64  id      = 1;
+  string title   = 2;
+  string content = 3;
+}
+
+message CreateArticleReply {
+  Article article = 1;
+}
+
+message UpdateArticleRequest {
+  int64  id      = 1;
+  string title   = 2;
+  string content = 3;
+}
+
+message UpdateArticleReply {
+  Article article = 1;
+}
+
+message DeleteArticleRequest {
+  int64 id = 1;
+}
+
+message DeleteArticleReply {
+
+}
+
+message GetArticleRequest {
+  int64  id    = 1;
+  string title = 2;
+}
+
+message GetArticleReply {
+  Article article = 1;
+}
+
+message ListArticleRequest {
+
+}
+
+message ListArticleReply {
+  repeated Article articles = 1;
+}
