@@ -4,7 +4,6 @@ import (
 	"time"
 
 	"entgo.io/ent"
-	"entgo.io/ent/dialect"
 	"entgo.io/ent/schema/field"
 )
 
@@ -20,12 +19,8 @@ func (Article) Fields() []ent.Field {
 		field.Int64("id"),
 		field.String("title"),
 		field.String("content"),
-		field.Time("created_at").Default(time.Now).SchemaType(map[string]string{
-			dialect.MySQL: "datetime",
-		}),
-		field.Time("updated_at").Default(time.Now).SchemaType(map[string]string{
-			dialect.MySQL: "datetime",
-		}),
+		field.Time("created_at").Default(time.Now),
+		field.Time("updated_at").Default(time.Now),
 	}
 }
 

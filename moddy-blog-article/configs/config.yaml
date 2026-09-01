@@ -1,3 +1,5 @@
+trace:
+  endpoint: http://127.0.0.1:14268/api/traces
 server:
   http:
     addr: 0.0.0.0:8000
@@ -7,8 +9,10 @@ server:
     timeout: 1s
 data:
   database:
-    driver: mysql
-    source: root:123456@tcp(127.0.0.1:3306)/test?parseTime=True&loc=Local
+    driver: postgres
+    source: "host=localhost port=5432 user=kratos password=123456 dbname=kartos-article sslmode=disable timezone=Asia/Shanghai"
+#    driver: mysql
+#    source: kratos:123456@tcp(127.0.0.1:3306)/kartos-article?parseTime=True&loc=Local
   redis:
     addr: 127.0.0.1:6379
     read_timeout: 0.2s
