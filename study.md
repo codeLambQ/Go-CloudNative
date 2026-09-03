@@ -224,3 +224,23 @@ initTracer("http://localhost:14268/api/traces")
 tracing.Server()
 ```
 
+## docker 安装 redis postgresql
+```shell
+docker run -d \
+  --name kratos-pg \
+  --restart=always \
+  -p 5432:5432 \
+  -e POSTGRES_PASSWORD=123456 \
+  -e POSTGRES_USER=kratos \
+  -e POSTGRES_DB=kartos-article \
+  -v pg_data:/var/lib/postgresql/data \
+  postgres:16-alpine
+
+docker run -d \
+  --name redis \
+  --restart=always \
+  -p 6379:6379 \
+  -v redis_data:/data \
+  redis:7-alpine \
+  redis-server --appendonly yes
+```
