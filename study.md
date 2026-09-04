@@ -244,3 +244,11 @@ docker run -d \
   redis:7-alpine \
   redis-server --appendonly yes
 ```
+
+
+## kratos 项目开发顺序
+```sh
+# 1. biz 层
+
+# 2. data 层
+```

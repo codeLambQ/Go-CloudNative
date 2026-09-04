@@ -23,8 +23,8 @@ type ArticleRepo interface {
 	ListArticle(context.Context) ([]*Article, error)
 
 	//redis
-	GetArticleLike(context.Context) (int64, error)
-	IncArticleLike(context.Context) error
+	GetArticleLike(context.Context, int64) (int64, error)
+	IncArticleLike(context.Context, int64) error
 }
 
 // 创建用例
@@ -69,13 +69,13 @@ func (uc *ArticleUsecase) Get(ctx context.Context, id int64) (article *Article, 
 	}
 
 	// 增加喜欢数量
-	err = uc.repo.IncArticleLike(ctx)
+	err = uc.repo.IncArticleLike(ctx, id)
 	if err != nil {
 		uc.logger.Error("增加喜欢失败", "err", err, "path", id)
 		return
 	}
 
-	likeCount, err := uc.repo.GetArticleLike(ctx)
+	likeCount, err := uc.repo.GetArticleLike(ctx, id)
 	if err != nil {
 		uc.logger.Error("获取喜欢失败", "err", err, "path", id)
 		return
