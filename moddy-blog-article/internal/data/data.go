@@ -12,12 +12,13 @@ import (
 	"github.com/go-kratos/kratos/v3/log"
 	"github.com/go-redis/redis/v8"
 	"github.com/google/wire"
+
 	//_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"
 )
 
 // ProviderSet is data providers.
-var ProviderSet = wire.NewSet(NewData, NewGreeterRepo)
+var ProviderSet = wire.NewSet(NewData, NewGreeterRepo, NewArticleRepo)
 
 // Data .
 type Data struct {

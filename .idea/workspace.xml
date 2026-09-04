@@ -6,17 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a40f74f8-5452-4bce-8d77-739df6637471" name="更改" comment="新建 moddy-blog-article 和 moddy-blog-comment 微服务框架">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/configs/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/conf/conf.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/data.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/ent/migrate/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/ent/migrate/schema.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moddy-blog-article/internal/data/ent/schema/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/moddy-blog-article/internal/data/ent/schema/article.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +27,23 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/soft/go1.27.0" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../app/go1.27.1" />
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "codeLambQ"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:codeLambQ/Go-CloudNative.git",
+    "accountId": "a8a96eae-291e-405f-adbb-2a10f60faeda"
+  }
+}]]></component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
@@ -137,7 +140,7 @@
     "git-widget-placeholder": "master",
     "go.sdk.automatically.set": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/codelamb/code/go/Go-CloudNative",
+    "last_opened_file_path": "//wsl.localhost/Rocky9/home/alu/code/Go-CloudNative",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -335,8 +338,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-63c95d513abe-9addb268e56c-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-262.9437.286" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-GO-262.9437.286" />
+        <option value="bundled-gosdk-72a9cf600ed8-3dd3895e5e08-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-261.25134.147" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-GO-261.25134.147" />
       </set>
     </attachedChunks>
   </component>
