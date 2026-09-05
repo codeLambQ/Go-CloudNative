@@ -3,6 +3,7 @@ package server
 import (
 	"log/slog"
 
+	pb "moddy-blog-article/api/article/v1"
 	v1 "moddy-blog-article/api/helloworld/v1"
 	"moddy-blog-article/internal/conf"
 	"moddy-blog-article/internal/service"
@@ -29,5 +30,18 @@ func NewGRPCServer(c *conf.Server, greeter *service.GreeterService, logger *slog
 	}
 	srv := grpc.NewServer(opts...)
 	v1.RegisterGreeterServer(srv, greeter)
+	return srv
+}
+
+func NewArticleGRPCServer(service *service.ArticleService, logger *slog.Logger) *grpc.Server {
+	// 创建中间件
+	var opts = []grpc.ServerOption{
+		grpc.Middleware(
+			recovery.Recovery(),
+		),
+	}
+
+	srv := grpc.NewServer(opts...)
+	pb.RegisterArticleServerServer(srv, service)
 	return srv
 }

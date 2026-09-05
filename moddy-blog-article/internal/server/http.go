@@ -3,6 +3,7 @@ package server
 import (
 	"log/slog"
 
+	pb "moddy-blog-article/api/article/v1"
 	v1 "moddy-blog-article/api/helloworld/v1"
 	"moddy-blog-article/internal/conf"
 	"moddy-blog-article/internal/service"
@@ -30,4 +31,15 @@ func NewHTTPServer(c *conf.Server, greeter *service.GreeterService, logger *slog
 	srv := http.NewServer(opts...)
 	v1.RegisterGreeterHTTPServer(srv, greeter)
 	return srv
+}
+
+func NewArticleHTTPServer(service *service.ArticleService, logger *slog.Logger) *http.Server {
+	var opts = []http.ServerOption{
+		http.Middleware(
+			recovery.Recovery(),
+		),
+	}
+	src := http.NewServer(opts...)
+	pb.RegisterArticleServerHTTPServer(src, service)
+	return src
 }
